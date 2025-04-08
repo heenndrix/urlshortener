@@ -8,12 +8,14 @@ import java.time.LocalDateTime;
 
 @Document(collection = "urls")
 public class UrlEntity {
+
     @Id
     private String id;
+
     private String fullUrl;
+
     @Indexed(expireAfter = "0")
     private LocalDateTime expiresAt;
-
 
     public UrlEntity() {
     }
