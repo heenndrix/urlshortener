@@ -11,7 +11,6 @@ public class UrlEntity {
 
     @Id
     private String id;
-
     private String fullUrl;
 
     @Indexed(expireAfter = "0")
